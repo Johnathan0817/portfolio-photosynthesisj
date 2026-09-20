@@ -1,0 +1,14 @@
+/* ─── Image placeholders ───
+   When real photos aren't loaded yet, each .gallery-item gets a unique
+   gradient background so the grid still looks beautiful.
+   Replace by setting real src paths in index.html.
+*/
+
+.gallery-item:nth-child(1) img { background: linear-gradient(135deg, #e0d7ff 0%, #fce7f3 100%); }
+.gallery-item:nth-child(2) img { background: linear-gradient(135deg, #dbeafe 0%, #e0d7ff 100%); }
+.gallery-item:nth-child(3) img { background: linear-gradient(135deg, #fce7f3 0%, #dbeafe 100%); }
+.gallery-item:nth-child(4) img { background: linear-gradient(135deg, #fef3c7 0%, #fce7f3 100%); }
+.gallery-item:nth-child(5) img { background: linear-gradient(135deg, #d1fae5 0%, #dbeafe 100%); }
+.gallery-item:nth-child(6) img { background: linear-gradient(135deg, #fce7f3 0%, #e0d7ff 100%); }
+.gallery-item:nth-child(7) img { background: linear-gradient(135deg, #dbeafe 0%, #fce7f3 100%); }
+.gallery-item:nth-child(8) img { background: linear-gradient(135deg, #e0d7ff 0%, #dbeafe 100%); }

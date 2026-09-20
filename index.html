@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHOTOSYNTHESISJ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="placeholders.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-brand">PHOTOSYNTHESISJ</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content glass">
+      <p class="hero-eyebrow">Visual Storyteller</p>
+      <h1>Capturing Moments<br /><em>Beyond the Frame</em></h1>
+      <p class="hero-sub">Photography that breathes life into every still.</p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image-frame glass">
+            <img src="assets/profile.jpg" alt="Photographer portrait" id="profile-img" />
+            <div class="about-image-overlay"></div>
+          </div>
+          <div class="about-badge glass">
+            <span class="badge-num">3+</span>
+            <span class="badge-label">Years of Experience</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">About Me</p>
+          <h2>Hi, I'm <span class="highlight">Johnathan</span></h2>
+          <p class="about-lead">
+            A passionate visual storyteller based in Kota Tinggi, Johor, specialising in portrait,
+            street, landscape and commercial photography.
+          </p>
+          <p class="about-body">
+            With a camera always in hand and a keen eye for light, I craft images that speak
+            before words are needed. My approach merges artistic instinct with technical
+            precision — ensuring every shot feels both candid and composed.
+          </p>
+          <div class="about-tags">
+            <span class="tag glass">Portrait</span>
+            <span class="tag glass">Street</span>
+            <span class="tag glass">Landscape</span>
+            <span class="tag glass">Commercial</span>
+            <span class="tag glass">Cinematic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Portfolio</p>
+        <h2>Selected Works</h2>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="street">Street</button>
+        <button class="filter-btn" data-filter="landscape">Landscape</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+      </div>
+
+      <!-- Gallery grid -->
+      <div class="gallery-grid" id="gallery">
+
+        <div class="gallery-item" data-category="portrait" data-title="Paramedic" data-desc="Always standing ready to save lives — a portrait of dedication and courage.">
+          <img src="assets/photos/medic.jpg" alt="medic" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-cat">Portrait</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="street" data-title="Light Exposure" data-desc="Editorial series exploring geometry in the city.">
+          <img src="assets/photos/longexposure.jpg" alt="Urban Lines" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-title">Urban Lines</p>
+            <p class="g-cat">Editorial</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscape" data-title="Still Waters" data-desc="Dawn reflections at the lake — stillness redefined.">
+          <img src="assets/photos/photo3.jpg" alt="Still Waters" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-title">Still Waters</p>
+            <p class="g-cat">Landscape</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="commercial" data-title="Product Aura" data-desc="Commercial shoot blending minimalism with luxury.">
+          <img src="assets/photos/photo4.jpg" alt="Product Aura" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-title">Product Aura</p>
+            <p class="g-cat">Commercial</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="portrait" data-title="Soft Focus" data-desc="Studio portrait with diffused natural lighting.">
+          <img src="assets/photos/photo5.jpg" alt="Soft Focus" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-title">Soft Focus</p>
+            <p class="g-cat">Portrait</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="editorial" data-title="Monochrome" data-desc="Black and white editorial — emotion without colour.">
+          <img src="assets/photos/photo6.jpg" alt="Monochrome" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-title">Monochrome</p>
+            <p class="g-cat">Editorial</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscape" data-title="Cloud Break" data-desc="Mountain peaks piercing the morning mist.">
+          <img src="assets/photos/photo7.jpg" alt="Cloud Break" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-title">Cloud Break</p>
+            <p class="g-cat">Landscape</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="commercial" data-title="Campaign '25" data-desc="Brand identity campaign — confidence in every frame.">
+          <img src="assets/photos/photo8.jpg" alt="Campaign 25" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-title">Campaign '25</p>
+            <p class="g-cat">Commercial</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+    <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-prev" id="lb-prev" aria-label="Previous">&#8592;</button>
+    <button class="lb-next" id="lb-next" aria-label="Next">&#8594;</button>
+    <div class="lb-inner glass">
+      <img id="lb-img" src="" alt="" />
+      <div class="lb-caption">
+        <p id="lb-title"></p>
+        <p id="lb-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CLIENTS ===== -->
+  <section id="clients">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Experience</p>
+        <h2>Brands I've Shot For</h2>
+      </div>
+      <div class="clients-grid">
+
+        <div class="client-card glass">
+          <div class="client-icon"><i class="fa-solid fa-camera-retro"></i></div>
+          <h3>Brand Name</h3>
+          <p class="client-type">Fashion & Lifestyle</p>
+          <p class="client-desc">Campaign photography for their 2024 spring collection — studio and on-location.</p>
+        </div>
+
+        <div class="client-card glass">
+          <div class="client-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>Studio Co.</h3>
+          <p class="client-type">Corporate</p>
+          <p class="client-desc">Executive portraits and team headshots for annual report and website refresh.</p>
+        </div>
+
+        <div class="client-card glass">
+          <div class="client-icon"><i class="fa-solid fa-star"></i></div>
+          <h3>Luxe Magazine</h3>
+          <p class="client-type">Editorial</p>
+          <p class="client-desc">Feature spreads across three issues covering lifestyle, travel, and beauty.</p>
+        </div>
+
+        <div class="client-card glass">
+          <div class="client-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Art Collective</h3>
+          <p class="client-type">Fine Art</p>
+          <p class="client-desc">Documentation and promotional photography for annual gallery exhibition.</p>
+        </div>
+
+        <div class="client-card glass">
+          <div class="client-icon"><i class="fa-solid fa-film"></i></div>
+          <h3>Media House</h3>
+          <p class="client-type">Commercial</p>
+          <p class="client-desc">Product hero shots and behind-the-scenes content for digital campaigns.</p>
+        </div>
+
+        <div class="client-card glass">
+          <div class="client-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Wedding Co.</h3>
+          <p class="client-type">Events</p>
+          <p class="client-desc">Partnered photographer for high-end weddings and intimate celebrations.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Contact</p>
+        <h2>Let's Create Together</h2>
+        <p class="section-sub">Have a project in mind? Find me on social or send an enquiry.</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-card glass">
+          <a href="https://www.instagram.com/photo.synthesis.j?stkn=MXdpODVqNjU0ZmlsMg==" target="_blank" rel="noopener" class="social-link">
+            <div class="social-icon ig-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="social-text">
+              <p class="social-platform">Instagram</p>
+              <p class="social-handle">@photo.synthesis.j</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+        </div>
+
+        <div class="contact-card glass">
+          <a href="https://xhslink.cn/m/6ajUdnS45T1" target="_blank" rel="noopener" class="social-link">
+            <div class="social-icon rn-icon">
+              <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="12" fill="#FF2442"/>
+                <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-size="26" font-weight="bold" fill="white" font-family="Arial">小</text>
+              </svg>
+            </div>
+            <div class="social-text">
+              <p class="social-platform">RedNote · 小红书</p>
+              <p class="social-handle">@Johnathan</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+        </div>
+
+        <div class="contact-card glass contact-email">
+          <div class="email-wrap">
+            <p class="email-label">Or drop an email</p>
+            <a href="mailto:photo.synthesis.j17@gmail.com" class="email-link">photo.synthesis.j17@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">photosynthesisj</p>
+      <p class="footer-copy">&copy; <span id="year"></span> PHOTOSYNTHESISJ · All rights reserved</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
