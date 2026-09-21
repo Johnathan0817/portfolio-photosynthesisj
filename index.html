@@ -21,6 +21,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#gear">My Gear</a></li>
       <li><a href="#clients">Clients</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -104,7 +105,7 @@
         <button class="filter-btn" data-filter="street">Street</button>
         <button class="filter-btn" data-filter="landscape">Landscape</button>
         <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
       </div>
 
       <!-- Gallery grid -->
@@ -124,50 +125,44 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="landscape" data-title="Still Waters" data-desc="Dawn reflections at the lake — stillness redefined.">
-          <img src="assets/photos/photo3.jpg" alt="Still Waters" loading="lazy" />
+        <div class="gallery-item" data-category="portrait" data-title="Hazy Sunlight" data-desc="Sunlight flares through iridescent bubbles.">
+          <img src="assets/photos/sunlightbubble.JPG" alt="Hazy Sunlight" loading="lazy" />
           <div class="gallery-overlay glass">
-            <p class="g-title">Still Waters</p>
-            <p class="g-cat">Landscape</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="commercial" data-title="Product Aura" data-desc="Commercial shoot blending minimalism with luxury.">
-          <img src="assets/photos/photo4.jpg" alt="Product Aura" loading="lazy" />
-          <div class="gallery-overlay glass">
-            <p class="g-title">Product Aura</p>
-            <p class="g-cat">Commercial</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="portrait" data-title="Soft Focus" data-desc="Studio portrait with diffused natural lighting.">
-          <img src="assets/photos/photo5.jpg" alt="Soft Focus" loading="lazy" />
-          <div class="gallery-overlay glass">
-            <p class="g-title">Soft Focus</p>
             <p class="g-cat">Portrait</p>
           </div>
         </div>
 
-        <div class="gallery-item" data-category="editorial" data-title="Monochrome" data-desc="Black and white editorial — emotion without colour.">
-          <img src="assets/photos/photo6.jpg" alt="Monochrome" loading="lazy" />
+        <div class="gallery-item" data-category="commercial" data-title="Product Aura" data-desc="Commercial shoot blending minimalism with luxury.">
+          <img src="assets/photos/busfront1.jpg" alt="Bus Front Shot" loading="lazy" />
           <div class="gallery-overlay glass">
-            <p class="g-title">Monochrome</p>
-            <p class="g-cat">Editorial</p>
+            <p class="g-cat">Commercial</p> 
           </div>
         </div>
 
-        <div class="gallery-item" data-category="landscape" data-title="Cloud Break" data-desc="Mountain peaks piercing the morning mist.">
-          <img src="assets/photos/photo7.jpg" alt="Cloud Break" loading="lazy" />
+        <div class="gallery-item" data-category="sports" data-title="Motion Capture" data-desc="Freeze high-speed action in a single frame.">
+          <img src="assets/photos/picleball1.jpg" alt="Motion Capture" loading="lazy" />
           <div class="gallery-overlay glass">
-            <p class="g-title">Cloud Break</p>
-            <p class="g-cat">Landscape</p>
+            <p class="g-cat">Sports</p>
           </div>
         </div>
 
-        <div class="gallery-item" data-category="commercial" data-title="Campaign '25" data-desc="Brand identity campaign — confidence in every frame.">
-          <img src="assets/photos/photo8.jpg" alt="Campaign 25" loading="lazy" />
+        <div class="gallery-item" data-category="commercial" data-title="Expression" data-desc="Capturing the cheerful essence of the moment.">
+          <img src="assets/photos/cheer.JPG" alt="cheer" loading="lazy" />
           <div class="gallery-overlay glass">
-            <p class="g-title">Campaign '25</p>
+            <p class="g-cat">Commercial</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="portrait" data-title="Dedication" data-desc="Dedication of life.">
+          <img src="assets/photos/ahpo.jpg" alt="ahpo" loading="lazy" />
+          <div class="gallery-overlay glass">
+            <p class="g-cat">Portrait</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="commercial" data-title="Remarkable Moment" data-desc="Capturing the climactic moment of the ceremony.">
+          <img src="assets/photos/liondance.JPG" alt="liondance" loading="lazy" />
+          <div class="gallery-overlay glass">
             <p class="g-cat">Commercial</p>
           </div>
         </div>
@@ -189,6 +184,86 @@
       </div>
     </div>
   </div>
+
+  <!-- ===== GEAR / 3D CAMERA STUDIO ===== -->
+  <section id="gear">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">The Gear Behind the Shots</p>
+        <h2>Interactive 3D Camera Studio</h2>
+        <p class="section-sub">
+          Explore my Sony α6400 mirrorless camera in 360° 3D. Switch between my two primary lenses to see how the setup transforms in real time.
+        </p>
+      </div>
+
+      <div class="gear-studio glass">
+        <!-- Lens Switcher Toolbar -->
+        <div class="gear-controls-bar">
+          <div class="lens-switcher">
+            <span class="switcher-label"><i class="fa-solid fa-arrows-spin"></i> Select Lens:</span>
+            <div class="lens-btn-group">
+              <button type="button" class="lens-btn active" id="btn-lens-tamron" data-lens="tamron" aria-pressed="true">
+                <span class="lens-btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                <span class="lens-btn-text">
+                  <strong>Tamron 17-70mm F/2.8</strong>
+                  <small>Di III-A VC RXD · Fast Zoom</small>
+                </span>
+              </button>
+              <button type="button" class="lens-btn" id="btn-lens-viltrox" data-lens="viltrox" aria-pressed="false">
+                <span class="lens-btn-icon"><i class="fa-solid fa-camera"></i></span>
+                <span class="lens-btn-text">
+                  <strong>Viltrox 56mm F/1.7 Air</strong>
+                  <small>AF Prime · Featherweight Bokeh</small>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Camera Angle Presets & Controls -->
+          <div class="view-preset-group">
+            <span class="preset-label"><i class="fa-solid fa-eye"></i> Views:</span>
+            <button type="button" class="preset-btn active" data-preset="hero" title="Dynamic 3D Angle">3D View</button>
+            <button type="button" class="preset-btn" data-preset="front" title="Front View">Front</button>
+            <button type="button" class="preset-btn" data-preset="top" title="Top Dials & Shutter">Top</button>
+            <button type="button" class="preset-btn" data-preset="back" title="Rear LCD Screen">Screen</button>
+            <button type="button" class="preset-btn orbit-btn active" id="btn-orbit-toggle" title="Toggle Auto-Rotation">
+              <i class="fa-solid fa-rotate"></i> Auto-Rotate
+            </button>
+          </div>
+        </div>
+
+        <!-- 3D Canvas Viewport -->
+        <div class="canvas-wrapper" id="gear-canvas-wrapper">
+          <div id="gear-3d-canvas-container"></div>
+
+          <!-- Interaction Hint -->
+          <div class="interaction-hint" id="interaction-hint">
+            <span><i class="fa-solid fa-hand-pointer"></i> Drag to rotate 360° · Scroll to zoom · Right-click to pan</span>
+          </div>
+
+          <!-- Live Lens Mount Badge -->
+          <div class="lens-mount-status" id="lens-mount-status">
+            <span class="status-dot"></span>
+            <span class="status-text" id="mount-status-text">Tamron 17-70mm F/2.8 Mounted</span>
+          </div>
+        </div>
+
+        <!-- Camera Body Specs Bar -->
+        <div class="gear-body-bar">
+          <div class="body-info">
+            <div class="body-logo-mark"><i class="fa-solid fa-camera-retro"></i> SONY α6400 (ILCE-6400)</div>
+            <p>24.2 MP APS-C Exmor CMOS Sensor · Real-time Eye AF & Tracking · 4K HDR · 180° Tiltable Touchscreen · E-Mount</p>
+          </div>
+          <div class="custom-model-trigger">
+            <label for="custom-glb-input" class="custom-glb-label" title="Optionally load your own .GLB 3D model file from any 3D generator">
+              <i class="fa-solid fa-cloud-arrow-up"></i> Load Custom .GLB
+            </label>
+            <input type="file" id="custom-glb-input" accept=".glb,.gltf" style="display:none;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== CLIENTS ===== -->
   <section id="clients">
@@ -303,12 +378,27 @@
       <div class="footer-links">
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#gear">My Gear</a>
         <a href="#clients">Clients</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
 
+  <!-- 3D Graphics Engine (Three.js & OrbitControls with CDN fallbacks) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://unpkg.com/three@0.128.0/build/three.min.js"><\/script>');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script>
+    if (typeof THREE !== 'undefined' && typeof THREE.OrbitControls === 'undefined') {
+      document.write('<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"><\/script>');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

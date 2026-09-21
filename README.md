@@ -80,7 +80,19 @@ Find the `#contact` section in `index.html`:
 
 ---
 
-### 6. Colour Accent
+### 6. 3D Camera Studio (Sony α6400 & Lenses)
+The interactive 3D studio is located at `#gear` in `index.html`.
+- **Live 3D Camera Model**: Fully interactive 360° model of your Sony α6400 mirrorless camera with realistic grip, controls, dials, and signature orange Alpha mount ring.
+- **Two Interchangeable Lenses**:
+  1. **Tamron 17-70mm F/2.8 Di III-A VC RXD** (Standard All-Round Fast Zoom)
+  2. **Viltrox AF 56mm F/1.7 Air** (Featherweight Portrait Prime)
+- **Interactive Switcher Buttons**: Users can click either button to smoothly unmount and mount the lenses in 3D, complete with bayonet rotation animation and dynamic HUD specs card updates.
+- **View Presets**: Quick angle buttons for 3D Hero, Front, Top Dials, and Rear LCD Screen, plus an Auto-Rotate showroom toggle.
+- **Custom .GLB Model Loading**: Visitors or you can optionally click *"Load Custom .GLB"* to load any 3D model generated from Meshy, CGTrader, Sketchfab, or any 3D generator directly into the viewport!
+
+---
+
+### 7. Colour Accent
 The default accent is a soft **violet (#a78bfa)**. To change it, edit `style.css`:
 ```css
 :root {
