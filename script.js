@@ -572,7 +572,7 @@ $$('.gallery-item img').forEach(img => {
     ctx.fillRect(0, 10, w, 38);
 
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 22px "Inter", Arial, sans-serif';
+    ctx.font = '10px "Inter", Arial, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
 
@@ -688,7 +688,7 @@ $$('.gallery-item img').forEach(img => {
 
   // The iconic Sony Alpha Electric Orange Bayonet Mount Ring
   const matSonyOrange = new THREE.MeshStandardMaterial({
-    color: 0xff4600,
+    color: 0xBCC6CC,
     roughness: 0.28,
     metalness: 0.72,
     emissive: 0x441100
@@ -731,7 +731,7 @@ $$('.gallery-item img').forEach(img => {
     bodyGroup.add(mainBox);
 
     // Front Right Ergonomic Hand Grip
-    const gripGeo = new THREE.BoxGeometry(3.6, 6.0, 2.4);
+    const gripGeo = new THREE.BoxGeometry(3.6, 6.0, 4.9);
     const grip = new THREE.Mesh(gripGeo, matGrip);
     grip.position.set(-4.1, -0.1, 0.95);
     bodyGroup.add(grip);
